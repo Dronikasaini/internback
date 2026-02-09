@@ -4,7 +4,9 @@ const userschema = require('./Models/mongo')
 
 const mongoose =require('mongoose')
 const cors = require("cors");
-app.use(cors('https://intern-1-jefc.onrender.com'));
+app.use(cors({
+  origin: "https://intern-1-jefc.onrender.com"
+}));
 
 app.use(express.json());
 
